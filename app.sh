@@ -3,7 +3,7 @@
 mkdir ServWeb
 mkdir ServWeb/templates
 mkdir ServWeb/static
-cp sample_app.py ServWeb/.
+cp app.py ServWeb/.
 cp -r templates/* ServWeb/templates/.
 cp -r static/* ServWeb/static/.
 echo "FROM python" >> ServWeb/Dockerfile
