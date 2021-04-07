@@ -12,7 +12,7 @@ echo "COPY ./static /home/myapp/static" >> ServWeb/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >> ServWeb/Dockerfile
 echo "COPY app.py /home/myapp/" >> ServWeb/Dockerfile
 echo "EXPOSE 8080" >> ServWeb/Dockerfile
-echo "CMD python3 /home/myapp/sample_app.py" >> ServWeb/Dockerfile
+echo "CMD python3 /home/myapp/app.py" >> ServWeb/Dockerfile
 cd ServWeb
 docker build -t sampleapp .
 docker run -t -d -p 8080:8080 --name samplerunning sampleapp
