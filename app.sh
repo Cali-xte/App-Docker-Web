@@ -10,7 +10,7 @@ echo "FROM python" >> ServWeb/Dockerfile
 echo "RUN pip install flask" >> ServWeb/Dockerfile
 echo "COPY ./static /home/myapp/static" >> ServWeb/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >> ServWeb/Dockerfile
-echo "COPY sample_app.py /home/myapp/" >> ServWeb/Dockerfile
+echo "COPY app.py /home/myapp/" >> ServWeb/Dockerfile
 echo "EXPOSE 8080" >> ServWeb/Dockerfile
 echo "CMD python3 /home/myapp/sample_app.py" >> ServWeb/Dockerfile
 cd ServWeb
