@@ -14,6 +14,6 @@ echo "COPY app.py /home/myapp/" >> ServWeb/Dockerfile
 echo "EXPOSE 8092" >> ServWeb/Dockerfile
 echo "CMD python3 /home/myapp/app.py" >> ServWeb/Dockerfile
 cd ServWeb
-docker build -t sampleapp .
-docker run -t -d -p 8092:8092 --name samplerunning --restart unless-stopped sampleapp
+docker build -t servweb .
+docker run -t -d -p 8092:8092 --name servwebct --restart unless-stopped servweb
 docker ps -a
